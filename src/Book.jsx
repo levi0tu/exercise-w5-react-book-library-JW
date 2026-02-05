@@ -7,16 +7,18 @@ function Book({ book }) {
     const { title, author, year, genre, rating, description, image } = book;
 
     return (
-        <article>
+        <article className="book-card">
             <CoverImage image={image} title={title} />
-            <Title title={title} />
-            <Author author={author} />
-            <BookInfo
-                year={year}
-                genre={genre}
-                rating={rating}
-                description={description}
-            />
+            <div className="book-body">
+                <Title title={title} />
+                <Author author={author} />
+                <BookInfo
+                    year={year}
+                    genre={genre}
+                    rating={rating}
+                    description={description}
+                />
+            </div>
         </article>
     );
 }

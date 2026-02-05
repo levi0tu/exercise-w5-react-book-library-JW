@@ -4,12 +4,14 @@ import Book from "./Book";
 
 function App() {
   const { books } = data;
-  console.log(books);
 
   return (
     <>
-      {books.map((book) => (
-        <Book key={book.title} book={book} />))}
+      <div className="grid">
+        {books.map((book) => (
+          <Book key={book.title} book={book} />
+        ))}
+      </div>
     </>
   );
 }
