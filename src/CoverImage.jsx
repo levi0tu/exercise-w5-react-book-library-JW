@@ -1,9 +1,6 @@
-function Image({ image }) {
-    return (
+function CoverImage({ image, title }) {
+    return <img src={image} alt={title} />;
 
-        <h1>{image}</h1>
-
-    );
 }
 
-export default Image;
+export default CoverImage;
